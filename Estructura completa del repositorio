@@ -1,0 +1,46 @@
+queseria-nc-lite/
+├── .gitignore
+├── LICENSE
+├── README.md
+├── pom.xml
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── ar/
+│       │       └── gob/
+│       │           └── lapampa/
+│       │               └── queserianc/
+│       │                   ├── QueseriaNcApp.java       # Punto de entrada
+│       │                   ├── model/
+│       │                   │   ├── Queso.java           # Entidad principal
+│       │                   │   ├── Lote.java            # Trazabilidad SENASA
+│       │                   │   ├── MateriaPrima.java    # Leche, cultivos
+│       │                   │   └── ControlCalidad.java  # Parámetros de calidad
+│       │                   ├── service/
+│       │                   │   ├── ProduccionService.java
+│       │                   │   ├── TrazabilidadService.java
+│       │                   │   └── ReporteService.java
+│       │                   ├── storage/
+│       │                   │   ├── Database.java        # SQLite wrapper
+│       │                   │   └── DataLoader.java     # Carga inicial
+│       │                   └── ui/
+│       │                       ├── MainView.java        # Ventana principal
+│       │                       ├── ProduccionView.java  # Registro de producción
+│       │                       ├── LotesView.java       # Gestión de lotes SENASA
+│       │                       └── ReportesView.java    # Informes PDF
+│       │
+│       └── resources/
+│           ├── icons/
+│           │   └── quesito.png
+│           └── db/
+│               └── schema.sql
+│
+├── data/
+│   └── samples/                # Datos de ejemplo
+│       ├── produccion_ejemplo.csv
+│       └── lotes_ejemplo.csv
+│
+└── docs/
+    ├── guia_rapida.pdf         # Impresión para operarios
+    └── normativa_senasa.md     # Requisitos para quesos artesanales
