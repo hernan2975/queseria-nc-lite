@@ -1,0 +1,6 @@
+codigo,fecha_elaboracion,tipo_queso,cantidad_unidades,peso_total_kg,rnpa
+QN-LP-20250601-001,2025-06-01,criollo,12,25.2,12-3456789-0
+QN-LP-20250601-002,2025-06-01,sardo,8,22.4,12-3456789-0
+QN-LP-20250602-001,2025-06-02,quesillo,10,16.0,12-3456789-0
+QN-LP-20250603-001,2025-06-03,provolone,6,21.0,12-3456789-0
+QN-LP-20250603-002,2025-06-03,criollo,10,19.0,12-3456789-0
