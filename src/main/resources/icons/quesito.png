@@ -23,3 +23,9 @@ os.makedirs("src/main/resources/icons", exist_ok=True)
 img.save("src/main/resources/icons/quesito.png")
 print("✅ Icono generado: src/main/resources/icons/quesito.png")
 ```
+Ejecuta con:
+
+```bash
+pip install pillow
+python scripts/generate_icon.py
+```
