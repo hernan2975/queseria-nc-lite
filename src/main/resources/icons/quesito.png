@@ -1,0 +1,25 @@
+Generar ícono simple con el siguiente script
+
+📄 scripts/generate_icon.py
+
+```bash
+from PIL import Image, ImageDraw, ImageFont
+import os
+
+# Crear ícono de queso 64x64
+img = Image.new('RGBA', (64, 64), (0, 0, 0, 0))
+draw = ImageDraw.Draw(img)
+
+# Dibujar queso amarillo con orificios
+draw.ellipse((8, 8, 56, 56), fill=(255, 215, 0), outline=(210, 180, 0), width=2)
+
+# Agregar orificios
+orificios = [(20, 20), (40, 25), (30, 40), (25, 30), (35, 20)]
+for x, y in orificios:
+    draw.ellipse((x-3, y-3, x+3, y+3), fill=(255, 255, 200))
+
+# Guardar
+os.makedirs("src/main/resources/icons", exist_ok=True)
+img.save("src/main/resources/icons/quesito.png")
+print("✅ Icono generado: src/main/resources/icons/quesito.png")
+```
